@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2 Exericse A</title>
+</head>
+<body>
+    <header>
+        <h1>Programing Workshop</h1>
+        <h1>Decoding Challenges, Building Solutions</h1>
+    </header>
+    
+    <nav>
+        <a href="#schedule">Schedule</a> | <a href="register.html">Register</a> | <a href="#about">About</a>
+    </nav>
+
+    <section id = "aboutevent">
+        <h2>About the Event</h2>
+        <article>
+            <h3>Speaker: Ts. Dr. Muhammad Haikal</h3>
+            <p>Ts. Dr. Muhammad Haikal will be discussing the future of artificial intelligence in everyday life.</p>
+        </article>
+        <article>
+            <h3>Activity: Networking Lunch</h3>
+            <p>Connect with industry peers and share ideas over a catered lunch.</p>
+        </article>
+    </section>
+
+    <section id = "eventschedule">
+        <h2>Event Schedule</h2>
+        <table border = "1">
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Person in Charge</th>
+            </tr>
+            <tr>
+                <td>9:00 AM</td>
+                <td>Opening Remarks</td>
+                <td>Dewan Sultan Mizan</td>
+                <td>Dr. Ahmad Isa Iskandar</td>
+            </tr>
+            <tr>
+                <td>9:00 AM</td>
+                <td>Keynote Address</td>
+                <td></td>
+                <td>Dr. Jane Smith</td>
+            </tr>
+            <tr>
+                <td>12:00 PM</td>
+                <td colspan="3"><center>Lunch Break</center></td>
+            </tr>
+            <tr>
+                <td>2:00 PM</td>
+                <td>Programing Test</td>
+                <td rowspan="2"><center>BYOD 1</center></td>
+                <td>Dr. Azmeel</td>
+            </tr>
+            <tr>
+                <td>4:00 PM</td>
+                <td>Programing Test</td>
+                <td>Dr. Azmeel</td>
+            </tr>
+            <tr>
+                <td>6:00 PM</td>
+                <td>Closing</td>
+                <td>Dewan Sultan Mizan</td>
+                <td>Dr. Ahmad Isa Iskandar</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id = "registration">
+        <h2>Registration</h2>
+            <form action = "register.html" method = "post">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname"><br><br>
+                <label for="matricnumber">Matric Number:</label>
+                <input type="text" id="matricnumber" name="matricnumber"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <p>Year of Study:</p>
+                <input type="radio" id="year1" name="study_year" value="1">
+                <label for="year1">Year 1</label><br>
+                <input type="radio" id="year2" name="study_year" value="2">
+                <label for="year2">Year 2</label><br>
+                <input type="radio" id="year3" name="study_year" value="3">
+                <label for="year3">Year 3</label><br>
+                <input type="radio" id="year4" name="study_year" value="4">
+                <label for="year4">Year 4</label><br><br>
+
+                <label for = "session">Select your session:</label><br>
+                <input type = "checkbox" id = "session1" name = "session1" value = "Session 1">
+                <label for = "session1">Session 1</label><br>
+                <input type = "checkbox" id = "session2" name = "session2" value = "Session 2">
+                <label for = "session2">Session 2</label><br>
+                <input type = "checkbox" id = "session3" name = "session3" value = "Session 3">
+                <label for = "session3">Session 3</label><br><br>
+
+                <label for = "programme">Select your Programme of Faculty:</label>
+                <select id = "programme" name = "programme">
+                    <option value = "FSKM">FSKM</option>
+                    <option value = "FPEPS">FPEPS</option>
+                    <option value = "FSSM">FSSM</option>
+                </select><br><br>
+                
+                <input type = "submit" value = "Submit">
+            </form>
+    </section>
+
+
+    <footer>
+        <p>Organiser: Tech Innovators Org &copy; 2026</p>
+    </footer>
+</body>
+</html>

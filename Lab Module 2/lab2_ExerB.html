@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+</head>
+<body>
+
+    <!--Error 1 (Line 12): Closing should be </header>, not </head>-->
+    <!--Error 2 (Line 36): Forgot closing </tr>-->
+    <!--Error 3 (Line 39): Limit column-->
+    <!--Error 4 (Line 61): Spelling wrong </from>, should be </form>-->
+    <!--Error 5 (Line 65): Forgot to put ; in &copy-->
+    <!--Error 6 (Line 52): The ID should "name", not "fullname"-->
+    <!--Error 7 (Line 59): The ID should "lab", not "labs"-->
+    <!--Error 8 (Line 32): Should have <th> for the head table, not </td>-->
+    <!--Error 9 (Line 47): Should close </td>-->
+    <!--Error 10 (Line 48): Should have <td> for each one, can't in one syntax-->
+
+    <header>
+        <h1>CSF3133 Course Feedback</h1>
+    </header> <!--Correction 1: closing header-->
+
+    <nav>
+        <a href="#results">Results</a> | <a href="#form">Feedback Form</a>
+    </nav>
+
+    <section id="results">
+        <h2>Feedback Summary</h2>
+        <table border="1">
+            <tr>
+                <th>Week</th>
+                <th>Topic</th>
+                <th>Rating</th> <!--Correction 8: Should have <th> for the head table, not </td>-->
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Introduction to HTML</td>
+                <td>4.5</td>
+            </tr> <!--Correction 2: forgot closing </tr>-->
+            <tr>
+                <td>2</td>
+                <td colspan="2">Tables and Forms</td> <!--Correction 3: column too much-->
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Semantic HTML</td> <!--Correction 9: Should close </td>-->
+                <td>4.0</td> <!--Correction 10: Should have <td> for each one, can't in one syntax-->
+            </tr>
+        </table>
+    </section>
+
+    <section id="form">
+        <h2>Give Your Feedback</h2>
+        <form action="submit_feedback.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br> <!--Correction 6: The ID should "name", not "fullname"-->
+            <label>Overall rating:</label><br>
+            <input type="radio" id="good" name="good" value="good">
+            <label for="good">Good</label>
+            <input type="radio" id="poor" name="poor" value="poor">
+            <label for="poor">Poor</label><br>
+            <input type="checkbox" id="lab" name="lab" value="yes">
+            <label for="lab">I attended all labs</label><br> <!--Correction 7: The ID should "lab", not "labs"-->
+            <input type="submit" value="Submit">
+        </form> <!--Correction 4: spell error </form>-->
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2026 CSF3133</p> <!--Correction 5: Forgot to put ; in &copy-->
+    </footer>
+
+</body>
+</html>

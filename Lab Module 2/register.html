@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id = "registration">
+        <h2>Registration</h2>
+            <form action = "register.html" method = "post">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname"><br><br>
+                <label for="matricnumber">Matric Number:</label>
+                <input type="text" id="matricnumber" name="matricnumber"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <p>Year of Study:</p>
+                <input type="radio" id="year1" name="study_year" value="1">
+                <label for="year1">Year 1</label><br>
+                <input type="radio" id="year2" name="study_year" value="2">
+                <label for="year2">Year 2</label><br>
+                <input type="radio" id="year3" name="study_year" value="3">
+                <label for="year3">Year 3</label><br>
+                <input type="radio" id="year4" name="study_year" value="4">
+                <label for="year4">Year 4</label><br><br>
+
+                <label for = "hsession">Select your session:</label><br>
+                <input type = "checkbox" id = "session1" name = "session1" value = "Session 1">
+                <label for = "session1">Session 1</label><br>
+                <input type = "checkbox" id = "session2" name = "session2" value = "Session 2">
+                <label for = "session2">Session 2</label><br>
+                <input type = "checkbox" id = "session3" name = "session3" value = "Session 3">
+                <label for = "session3">Session 3</label><br><br>
+
+                <label for = "programme">Select your Programme of Faculty:</label>
+                <select id = "programme" name = "programme">
+                    <option value = "FSKM">FSKM</option>
+                    <option value = "FPEPS">FPEPS</option>
+                    <option value = "FSSM">FSSM</option>
+                </select><br><br>
+                
+                <input type = "submit" value = "Submit">
+            </form>
+    </section>
+</body>
+</html>
