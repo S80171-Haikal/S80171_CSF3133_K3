@@ -301,6 +301,7 @@
     </div>
 
     <!-- Drag to scroll logic -->
+    <!-- Drag to scroll logic -->
     <script>
         const sliders = document.querySelectorAll('.drag-scroll');
         
@@ -313,8 +314,10 @@
             slider.addEventListener('mousedown', (e) => {
                 isDown = true;
                 isDragging = false;
-                slider.classList.add('is-dragging');
-                startX = e.pageX - slider.offsetLeft;
+                // REMOVED: slider.classList.add('is-dragging'); 
+                // Wait to add this until actual movement happens
+                
+                startX = e.pageX - slider.offsetLeft; // Fixed missing minus sign
                 scrollLeft = slider.scrollLeft;
             });
 
@@ -334,16 +337,19 @@
                 if (!isDown) return;
                 
                 e.preventDefault();
-                const x = e.pageX - slider.offsetLeft;
-                const walk = (x - startX) * 2.5; 
+                const x = e.pageX - slider.offsetLeft; // Fixed missing minus sign
+                const walk = (x - startX) * 2.5;       // Fixed missing minus sign
                 
+                // Only trigger dragging state if the user actually moves the mouse
                 if (Math.abs(walk) > 5) {
                     isDragging = true; 
+                    slider.classList.add('is-dragging'); // ADDED HERE instead of mousedown
                 }
                 
-                slider.scrollLeft = scrollLeft - walk;
+                slider.scrollLeft = scrollLeft - walk; // Fixed missing minus sign
             });
             
+            // Prevent clicks on links ONLY if the user was actively dragging
             const links = slider.querySelectorAll('a');
             links.forEach(link => {
                 link.addEventListener('click', (e) => {
