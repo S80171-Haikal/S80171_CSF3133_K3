@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise 3</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div>
+        <header>
+            <h1>Web Inquiries & Tools Hub</h1>
+            <span>Connecting you with simplicity and interactivity.</span>
+        </header>
+    </div>
+
+    <hr>
+
+    <!-- Content Section: Contact Form -->
+    <div>
+        <h2>Contact Form</h2>
+        <form action="#" method="POST">
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="contact-date">Preferred Contact Date:</label><br>
+            <input type="date" id="contact-date" name="contact_date" required><br><br>
+
+            <label for="satisfaction">Satisfaction Level:</label><br>
+            <input type="range" id="satisfaction" name="satisfaction" min="0" max="10" value="5" oninput="satisfactionOutput.value = this.value">
+            <output id="satisfactionOutput">5</output><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Content Section: Inline Calculator -->
+    <div>
+        <h2>Inline Calculator</h2>
+        <form oninput="result.value = parseFloat(num1.value || 0) + parseFloat(num2.value || 0)">
+            <label for="num1">First Number:</label><br>
+            <input type="number" id="num1" name="num1" value="0"><br><br>
+
+            <label for="num2">Second Number:</label><br>
+            <input type="number" id="num2" name="num2" value="0"><br><br>
+
+            <label for="result">Total Sum:</label>
+            <output id="result" name="result">0</output>
+        </form>
+    </div>
+
+    <hr>
+
+    <!-- Footer Section -->
+    <div>
+        <p>Contact Us: support@example.com</p>
+        <p>&copy; 2026 Interactive Web Form. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
