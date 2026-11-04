@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise 3A</title>
+</head>
+<body>
+    <!--Question 1: Header Section-->
+    <div id="header">
+        <!--Question 2: Header using <span> in <h1> -->
+        <h1><span>Campus Bakery:</span> Baked with love, served with pride</h1>
+    </div>
+
+    <!--Question 1: Navigation Section-->
+    <div id="nav">
+        <!--Question 2: Navigation using <a> tags and seperated by "|"-->
+        <a href="#header">Home</a> |
+        <a href="#content">Order Now</a> |
+        <a href="#sidebar">Price List</a> |
+        <a href="#footer">Contact</a>
+    </div>
+
+    <!--Question 1: Content Section-->
+    <div id="content">
+        <!--Question 3: Block and InLine Elements-->
+        <p>Welcome to <strong>Campus Bakery</strong>, 
+            your favourite campus bakery. We offer 
+            <em>fresh and delicious</em> <br>cupcakes and cake slices 
+            at affordable prices. 
+            <span>Order your favourite flavours today!</span>
+            Visit our <a href="#sidebar">price list</a> for more details.</p>
+
+        <div>
+            <!--Question 5: Order Form Elements-->
+            <h2>Online Order Form</h2>
+            <form oninput="total.value = (cupcakes.value * 3) + (slices.value * 5)">
+                <h3>Customer Information</h3>
+                Customer Name: <input type="text" name="customerName" required><br><br>
+                Phone Number: <input type="text" name="phoneNumber" required><br><br>
+                Pickup Date: <input type="date" name="pickupDate" required><br><br>
+                Pickup Time: <input type="time" name="pickupTime" required><br><br>
+                Flavour: <input type="text" name="flavour" list="flavours" required>
+                <datalist id="flavours">
+                    <option value="Chocolate">
+                    <option value="Vanilla">
+                    <option value="Red Velvet">
+                    <option value="Strawberry">
+                    <option value="Lemon">
+                </datalist><br><br>
+                Icing Colour: <input type="color" name="icingColour"><br><br>
+                Sweetness Level: <input type="range" name="sweetnessLevel" id="sweetnessLevel" min="1" max="5" 
+                step="1" value="5" oninput="satisfactionOutput.value = this.value">
+                <output id="satisfactionOutput" for="sweetnessLevel">5</output><br><br>
+
+                <!--Question 6: Order Details with output-->
+                <h3>Order Details</h3>
+                Number of Cupcakes: <input type="number" name="cupcakes" min="0" value="0"><br><br>
+                Number of Cake Slices: <input type="number" name="slices" min="0" value="0"><br><br>
+                Total Price: RM <output name="total" for="cupcakes slices">0</output><br><br>
+                <input type="submit" value="Submit Order">
+            </form>
+        </div>
+    </div>
+
+    <!--Question 1: Sidebar Section-->
+    <div id="sidebar">
+        <!--Question 4: HTML Entities (Sidebar)-->
+        <h2>Price List</h2>
+        <ul>
+            <li>Cupcakes - RM3.00 each</li>
+            <li>Cake Slices - RM5.00 each</li>
+            <li>Custom Cakes - RM15.99+</li>
+        </ul>
+
+        <p>Special Offers &gt; Buy 5 cupcakes, get 1 free!</p>
+    </div>
+
+    <!--Question 1: Footer Section-->
+    <div id="footer">
+        <!--Question 4: HTML Entities (Footer)-->
+        <p>&copy; 2026 Campus Bakery&reg;. All Rights Reserved.</p>
+
+        <p>Thank you for supporting our campus bakery!</p>
+    </div>
+
+</body>
+</html>
