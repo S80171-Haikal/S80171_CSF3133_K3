@@ -1,0 +1,248 @@
+/* ==========================================================================
+   Global Body & Font Settings
+   ========================================================================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   Header & Text Decoration Requirements
+   ========================================================================== */
+header {
+    background-color: #005f73;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+/* Requirement: Overline decoration for h1 */
+h1 {
+    text-decoration: overline;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+/* Requirement: Underline decoration for h2 */
+h2 {
+    text-decoration: underline;
+    color: #005f73;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   Navigation Bar Styling
+   ========================================================================== */
+nav {
+    background-color: #0a9396;
+}
+
+nav ul {
+    list-style-type: none; /* Removes bullets */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centers menu items */
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none; /* Removes link underline */
+    text-transform: uppercase; /* Uppercase navigation text */
+    padding: 15px 25px;
+    font-weight: bold;
+}
+
+/* Navigation Item Hover Effect */
+nav a:hover {
+    background-color: #94d2bd;
+    color: #001219;
+}
+
+/* ==========================================================================
+   Interactive Link States (LVHA Order: Link -> Visited -> Hover -> Active)
+   ========================================================================== */
+a:link {
+    color: #0077b6;
+}
+
+a:visited {
+    color: #6b2d5c;
+}
+
+a:hover {
+    color: #ee9b00;
+}
+
+a:active {
+    color: #ca6702;
+}
+
+/* ==========================================================================
+   Section ID Selectors & Responsive Containers
+   ========================================================================== */
+#destinations, 
+#video, 
+#trip {
+    width: 90%; /* Percentage width for responsive layout */
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* ==========================================================================
+   Class Selectors: Destinations & Prices
+   ========================================================================== */
+.meter-container {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+meter {
+    width: 200px;
+    height: 20px;
+}
+
+.card {
+    border: 1px solid #e0e0e0;
+    background-color: #fcfcfc;
+    border-radius: 6px;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #005f73;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Requirement: Cross out old price */
+.old-price {
+    text-decoration: line-through;
+    color: #888888;
+    margin-right: 10px;
+}
+
+.new-price {
+    color: #ae2012;
+    font-size: 1.2rem;
+}
+
+/* ==========================================================================
+   Class Selectors: Video Player & Responsiveness
+   ========================================================================== */
+.video-container {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Requirement: Scale video for small screens */
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.caption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555555;
+    font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   Class Selectors: Trip Form Styling
+   ========================================================================== */
+.trip-form {
+    background-color: #e9d8a6;
+    padding: 25px;
+    border: 2px solid #ee9b00;
+    border-radius: 8px;
+    width: 90%; /* Responsive width */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.options-group label {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #005f73;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.submit-btn:hover {
+    background-color: #0a9396;
+}
+
+/* ==========================================================================
+   Footer Styling
+   ========================================================================== */
+footer {
+    background-color: #001219;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+footer address {
+    font-style: normal;
+    margin-top: 5px;
+}
+
+footer address a {
+    color: #94d2bd;
+}

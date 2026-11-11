@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>e-Café Campus</title>
+    <style type="text/css">
+        /* Navigation bar */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        a:link {
+            color: #1A5276;
+        }
+        a:visited {
+            color: #7D3C98;
+        }
+        a:hover {
+            color: #E67E22;
+        }
+        a:active {
+            color: #C0392B;
+        }
+        h1 {
+            text-decoration: overline;
+        }
+        p {
+            color: #333333; 
+            text-align: justify;
+        }
+        .intro {
+            font-size: 18px;
+            background-color: #FDEBD0;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #C0392B;
+        }
+    </style>
+</head>
+<body>
+    <!--Error 1 (Line 7): Replaced with CSS comment syntax (/* ... */).-->
+    <!--Error 2 (Line 9): Changed to "list-style-type: none;".-->
+    <!--Error 3 (Line 16-21): Reordered to a:link, a:visited, a:hover, a:active so hover works on visited links..-->
+    <!--Error 4 (Line 26): Changed to "text-decoration: overline;"..-->
+    <!--Error 5 (Line 29): Added colon ("color: #333333;")-->
+    <!--Error 6 (Line 31): Changed selector to ".intro"-->
+    <!--Error 7 (Line 33): Added closing brace "}"-->
+    <!--Error 8 (Line 34): Changed selector to ".highlight".-->
+    <!--Error 9 (Line 41): Updated to "href="#menu"" to link to the section ID.-->
+    <!--Error 10 (Line 47 & 51): Converted to class "class="item"".-->
+    <!--Error 11 (Line 58): Added "controls" attribute to <video>.-->
+    <!--Error 12 (Line 59): Changed to "type="video/mp4""-->
+
+    <header>
+        <h1>e-Café Campus</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="menu">
+        <h2>Today's Menu</h2>
+        <p class="intro">Freshly brewed coffee and local delights every day.</p>
+        <article class="item">
+            <h3>Kopi Tarik</h3>
+            <p>Only <span class="highlight">RM 3.50</span></p>
+        </article>
+        <article class="item">
+            <h3>Nasi Lemak</h3>
+            <p>Only <span class="highlight">RM 5.00</span></p>
+        </article>
+    </section>
+
+    <section id="video">
+        <h2>Watch Our Story</h2>
+        <video width="400" height="300" controls>
+            <source src="cafe.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    
+    <footer id="contact">
+        <p>&copy; 2026 e-Café Campus</p>
+    </footer>
+</body>
+</html>
