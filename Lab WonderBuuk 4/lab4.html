@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 4 - Webpage</title>
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Internal CSS (Requirement 4) -->
+  <style>
+    .internal-heading {
+      text-decoration: underline line-through;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header & Nav -->
+  <header>
+    <h1>Lab Exercise 4</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#form">Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="home">
+      <h2>Main Section</h2>
+      <article>
+        <p>This webpage demonstrates basic HTML5 semantic layout and simple CSS styling.</p>
+        <p class="note">This is an old note with line-through text decoration.</p>
+      </article>
+    </section>
+
+    <!-- Embedded Video Section -->
+    <section id="media">
+      <h2>Embedded Video</h2>
+      <article>
+        <figure>
+          <video controls width="600">
+            <source src="sample.mp4" type="video/mp4">
+            <track kind="captions" src="captions.vtt" srclang="en" label="English" default>
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>Sample video showcase with captions track.</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form">
+      <h2 class="internal-heading">User Information Form</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label>Gender:</label>
+          <input type="radio" id="male" name="gender" value="male" checked>
+          <label for="male" style="display:inline;">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female" style="display:inline;">Female</label>
+        </div>
+
+        <div class="form-group">
+          <label>Favorite Hobbies:</label>
+          <input type="checkbox" id="badminton" name="hobby" value="badminton" checked>
+          <label for="badminton" style="display:inline;">Badminton</label>
+          <input type="checkbox" id="futsal" name="hobby" value="futsal">
+          <label for="futsal" style="display:inline;">Futsal</label>
+          <input type="checkbox" id="gaming" name="hobby" value="gaming">
+          <label for="gaming" style="display:inline;">Gaming</label>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Lab 4 Webpage</p>
+  </footer>
+
+</body>
+</html>
