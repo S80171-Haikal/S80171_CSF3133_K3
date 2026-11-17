@@ -1,0 +1,112 @@
+/* Body and Google Font Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #4b1d78; /* UMT Purple */
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 15px;
+    color: #f3e5f5;
+    text-align: center;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #f39c12; /* UMT Orange/Gold accent */
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 15px;
+    padding: 8px 14px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #4b1d78;
+    color: #ffffff;
+}
+
+/* Main Section & Article Styling */
+section {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+article {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    border: 1px solid #dddddd;
+}
+
+h2 {
+    color: #4b1d78;
+    margin-top: 0;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4b1d78;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #e2e6ea;
+    color: #555555;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+}
