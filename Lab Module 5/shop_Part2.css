@@ -1,0 +1,100 @@
+/* General Page Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* 5. Header with Background Image and White Text */
+header {
+    background-image: url("books.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 40px 20px;
+}
+
+/* 8. Heading Font (Merriweather) */
+h1 {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+}
+
+/* 5. Navigation Bar Styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+/* 6. Active Link Highlight */
+nav li a.active {
+    background-color: #04AA6D;
+}
+
+/* 5 & 8. Main Content and Paragraph Line Height */
+main {
+    padding: 20px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* 7. Products Table Styling */
+#products {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#products td, #products th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#products tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#products tr:hover {
+    background-color: #ddd;
+}
+
+#products th {
+    background-color: #04AA6D;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* 7. Right-align Price Column */
+#products td.price {
+    text-align: right;
+}
+
+/* 9. Footer Styling */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
