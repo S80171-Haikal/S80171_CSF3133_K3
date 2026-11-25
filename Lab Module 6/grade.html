@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <h2>Student Grade Calculator</h2>
+    <!-- Error 1 Fix: Added 'return' so form does not refresh the page -->
+    <form name="gradeForm" onsubmit="return checkMark()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="mark">Mark (0-100):</label>
+        <input type="text" id="mark" name="mark"><br>
+        <button type="submit">Check Grade</button>
+    </form>
+    <p id="result"></p>
+    <!-- Error 2 Fix: Changed showtable() to showTable() -->
+    <button onclick="showTable()">Show Grade Table</button>
+    <div id="tableContainer"></div>
+    <!-- Error 3 Fix: Changed grades.js to grade.js -->
+    <script src="grade.js"></script>
+</body>
+</html>

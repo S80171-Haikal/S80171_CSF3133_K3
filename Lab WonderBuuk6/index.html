@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <!-- Header introducing the quiz -->
+        <header>
+            <h1>Web Development Quiz</h1>
+            <p>Answer each question before the 15-second timer runs out!</p>
+        </header>
+
+        <!-- Section for questions, options, and timer -->
+        <section id="quiz-section">
+            <div class="timer-box">Time Left: <span id="timer">15</span>s</div>
+            <h2 id="question-text">Question will appear here</h2>
+            <div id="options-container"></div>
+        </section>
+
+        <!-- Section to show feedback -->
+        <section id="feedback-section">
+            <p id="feedback-text"></p>
+        </section>
+
+        <!-- Buttons to submit and navigate -->
+        <div class="controls">
+            <button type="button" id="submit-btn" onclick="checkAnswer()">Submit Answer</button>
+            <button type="button" id="next-btn" onclick="nextQuestion()" style="display: none;">Next Question</button>
+            <button type="button" id="restart-btn" onclick="startQuiz()" style="display: none;">Restart Quiz</button>
+        </div>
+
+        <!-- Footer displaying final score -->
+        <footer>
+            <p id="score-display">Score: 0 / 0</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
